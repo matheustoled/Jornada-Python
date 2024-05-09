@@ -1,0 +1,33 @@
+import pyautogui as pa
+import pandas as pd
+import time
+
+pa.PAUSE = 0.4
+
+#entrar google
+pa.press("win")
+pa.write("chrome")
+pa.press("enter")
+
+#entrar site
+pa.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
+pa.press("enter")
+time.sleep(2)
+
+#logar
+pa.click(x=900, y=375)
+pa.write("matheustole304@gmail.com")
+pa.press("tab")
+pa.write("senha")
+pa.press("tab")
+pa.press("enter")
+time.sleep(1)
+#cadastrar produtos
+tabela = pd.read_csv("produtos.csv")
+print(tabela)
+
+
+
+pa.click(x=940, y=260)
+pa.write()
+pa.press("tab")
