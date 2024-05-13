@@ -22,10 +22,13 @@ pa.write("senha")
 pa.press("tab")
 pa.press("enter")
 time.sleep(1)
-#cadastrar produtos
-tabela = pd.read_csv("produtos.csv")
+
+# Especificando o caminho completo para o arquivo
+caminho_completo = "C:\\Users\\Matheus\\Desktop\\PROG\\Projetos\\Jornada Python\\Automação de Tarefas\\produtos_aula1.csv"
+tabela = pd.read_csv(caminho_completo)
 print(tabela)
 
+#cadastrar produtos
 for i in tabela.index:
     pa.click(x=950, y=260)
     pa.hotkey("ctrl","a")
