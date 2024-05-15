@@ -24,7 +24,7 @@ pa.press("enter")
 time.sleep(1)
 
 # Especificando o caminho completo para o arquivo
-caminho_completo = "C:\\Users\\Matheus\\Desktop\\PROG\\Projetos\\Jornada Python\\Automação de Tarefas\\produtos_aula1.csv"
+caminho_completo = "C:\\Users\\Matheus\\Desktop\\PROG\\Projetos\\Jornada Python\\Automação de Tarefas\\produtos.csv"
 tabela = pd.read_csv(caminho_completo)
 print(tabela)
 
